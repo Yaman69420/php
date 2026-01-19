@@ -1,29 +1,30 @@
 <?php
-    $stats = $page->getStats();
+declare(strict_types=1);
 ?>
 <section class="p-6">
+
     <div class="grid grid-cols-3 gap-6 mb-8">
         <div class="bg-white p-6 rounded shadow">
             <p class="text-gray-500 text-sm">Posts</p>
             <p class="text-2xl font-bold"><?php echo $stats['posts']; ?></p>
         </div>
+
         <div class="bg-white p-6 rounded shadow">
             <p class="text-gray-500 text-sm">Users</p>
             <p class="text-2xl font-bold"><?php echo $stats['users']; ?></p>
         </div>
+
         <div class="bg-white p-6 rounded shadow">
             <p class="text-gray-500 text-sm">Views</p>
             <p class="text-2xl font-bold"><?php echo $stats['views']; ?></p>
         </div>
-        <div class="bg-white p-6 rounded shadow">
-            <p class="text-gray-500 text-sm">Products</p>
-            <p class="text-2xl font-bold"><?php echo $stats['products']; ?></p>
-        </div>
     </div>
+
     <div class="bg-white p-6 rounded shadow mb-8">
         <h3 class="font-bold mb-4">Bezoekers</h3>
         <div id="chart"></div>
     </div>
+
     <div class="bg-white rounded shadow p-6">
         <h3 class="font-bold mb-4">Laatste posts</h3>
         <table class="w-full text-sm">
@@ -48,4 +49,5 @@
             </tbody>
         </table>
     </div>
+
 </section>

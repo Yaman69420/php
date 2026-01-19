@@ -1,5 +1,7 @@
 <?php
 declare(strict_types=1);
+
+namespace Admin\Services;
 class StatsService
 {
     public function getStats(): array
@@ -8,6 +10,7 @@ class StatsService
             'posts' => 12,
             'users' => 3,
             'views' => 1245,
+            'products' => 333,
         ];
     }
 }
